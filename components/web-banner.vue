@@ -42,9 +42,9 @@ export default {
                 {
                     imageUrl: '/b01.jpg',
                     url: '/',
-                    title: '基于进化的品牌<br/>塑造体系',
-                    subtitle: '建立品牌基因，塑造品牌符号，打造品牌营销工具，品牌高效传播<br/>简单四步，统一策划，分阶段执行',
-                    desc: '助力品牌提升，让您的生意更好做!'
+                    title: 'concept design<br/>Rendering',
+                    subtitle: 'design,design,design,design,design,design,design,<br/>design,design,design,design,design,design,design,',
+                    desc: 'design,design,design,!'
                 },
                 {
                     imageUrl: '/b02.jpg',

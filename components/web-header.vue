@@ -2,11 +2,15 @@
     <header :class="{scroll: isScroll}">
         <div class="center">
             <div class="logo">
+                <!--
                 <img src="/logo.png" alt="" v-if="!isScroll">
                 <img src="/logo1.png" alt="" v-else>
+                -->
             </div>
             <div class="logo-h5">
+                <!--
                 <img src="/logo1.png" alt="">
+            -->
             </div>
             <div class="nav">
                 <div class="item" v-for="(item, index) in list" :key="index" :class="{active: $route.path === item.url && item.url !== '/'}">
