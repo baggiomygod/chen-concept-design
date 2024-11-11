@@ -13,12 +13,12 @@
                 <bm-navigation anchor="BMAP_ANCHOR_TOP_RIGHT"></bm-navigation>
                 <bm-marker :position="center" :dragging="true" @click="infoWindowOpen"></bm-marker>
                 <!-- animation="BMAP_ANIMATION_BOUNCE" -->
-                <!-- <bm-info-window :position="center" :show="false"  @close="infoWindowClose" @open="infoWindowOpen">
+                <bm-info-window :position="center" :show="false"  @close="infoWindowClose" @open="infoWindowOpen">
                 <p>{{config.webTitle}}</p>
                 <p>联系人：{{config.linkman}}</p>
                 <p>手机：{{config.tel}}</p>
                 <p>地址：{{config.address}}</p>
-                </bm-info-window> -->
+                </bm-info-window>
             </baidu-map>
         </div>
         <web-footer></web-footer>
@@ -48,15 +48,15 @@ export default ({
         }
     },
     async asyncData({app}) {
-        const categorys  = await getProductCategory({})
         const config = await getWebConfig()
+        console.log('config:', config)
+        // 172.126231,-42.718792
         const center = {
             lng: config.baiduMapX,
             lat: config.baiduMapY
         }
         return {
             head: app.head,
-            categorys,
             config,
             center
         }

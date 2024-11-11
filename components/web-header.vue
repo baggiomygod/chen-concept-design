@@ -33,27 +33,19 @@ export default {
             isScroll: false,
             list: [
                 {
-                    title: '首页',
+                    title: 'Home',
                     url: '/'
                 },
                 {
-                    title: '服务',
-                    url: '/service'
-                },
-                // {
-                //     title: '方案',
-                //     url: '/product/type/0'
-                // },
-                {
-                    title: '作品',
-                    url: '/product/type/28'
+                    title: 'product',
+                    url: '/product/type/1'
                 },
                 {
-                    title: '关于',
+                    title: 'About',
                     url: '/company'
                 },
                 {
-                    title: '联系',
+                    title: 'Contact',
                     url: '/contact'
                 }
             ]

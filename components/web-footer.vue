@@ -1,6 +1,6 @@
 <template>
     <div class="footer">
-        广州正飞设计有限公司　地址：广州　邮编：123456　QQ：1235555
+        jack-chen　address：xxxx　phone: 15155555555555
     </div>
 </template>
 <script>

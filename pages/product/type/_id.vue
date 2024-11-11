@@ -61,13 +61,13 @@ export default {
             currentPage: +query.page,
             id: +params.id,
             categorys,
-            products: product.list,
+            products: product ? product.list : [],
             count: product.count,
         }
     },
     methods: {
         async currentChange(value) {
-            const product = await getProducts({page: value, size: this.size, type: this.id})
+        const product = await getProducts({page: value, size: this.size, type: this.id})
             this.products = product.list
             this.$router.push({name: 'product-type-id', params: { id: this.$route.params.id }, query: {page: value}})
         }

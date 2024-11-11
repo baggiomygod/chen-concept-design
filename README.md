@@ -13,5 +13,11 @@ $ yarn dev
 $ yarn generate
 ```
 
+
+# npm run build 的部署
+使用pm2 启动
+```
+    pm2 start npm -- start
+```
 ## TODO
 1. pages/type/_id.vue，要做seo生成页面，分页不能使用element分页组件，要重写分页组件通过nuxt-link进行页面跳转

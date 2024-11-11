@@ -3,11 +3,10 @@
         <web-header></web-header>
         <div class="wrap">
             <div class="title">
-                关于我们
                 <span>ABOUT US</span>
             </div>
             <div class="main">
-                <img src="../static/about.jpg" alt="关于我们" class="img">
+                <img src="../static/about.jpg" alt="ABOUT US" class="img">
                 <div class="content" v-html="company.content"></div>
                 <div class="clear"></div>
             </div>
@@ -32,11 +31,10 @@ export default ({
         }
     },
     async asyncData({app}) {
-        const categorys  = await getProductCategory({});
         const company = await getNewsInfo({ id: 6 })
+        console.log(company)
         return {
             head: app.head,
-            categorys,
             company: company.info,
         }
     }

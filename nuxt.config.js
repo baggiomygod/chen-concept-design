@@ -1,8 +1,12 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   target: 'static',
+  server: {
+    port: 8000, // default: 3000
+    host: '0.0.0.0' // default: localhost只能用于本机访问，如果需要对外访问需要设置0.0.0.0
+  },
   head: {
-    title: 'xxxx有限公司',
+    title: 'xxxx Limited Company',
     htmlAttrs: {
       lang: 'en'
     },
@@ -22,7 +26,7 @@ export default {
   css: [
     'animate.css/animate.min.css',
     'element-ui/lib/theme-chalk/index.css',
-    'swiper/dist/css/swiper.css',
+    'swiper/css/swiper.css',
     {
       src: 'assets/less/common.less',
       lang: 'less'
